@@ -8,6 +8,204 @@
     <meta name="author" content="Gerson Natanael Hernandez Aldana"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <title>Ejemplo HTML5-CSS3</title>
+    <style>
+        /* Estilos generales del body */
+body {
+    margin: 50px auto;
+    width: 80%;
+    text-align: left;
+    background-color: #f4f4f4; /* Color de fondo más suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna */
+    color: #333; /* Texto más oscuro para mejor legibilidad */
+}
+
+/* Estilos principales del contenedor */
+.Main {
+    background-color: #fff;
+    border-radius: 8px; /* Bordes más redondeados */
+    overflow: hidden;
+    line-height: 1.6;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 20px;
+}
+
+/* Estilos del encabezado de la página */
+.pageHeader {
+    background: #007BFF; /* Color azul moderno */
+    height: 50px; /* Altura aumentada */
+    line-height: 50px;
+    margin: 0 auto 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
+}
+
+.pageHeader nav ul, .pageFooter nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.pageHeader nav ul li, .pageFooter nav ul li {
+    display: inline-block;
+}
+
+.pageHeader nav a, .pageFooter nav a {
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    padding: 0 25px;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold; /* Texto en negrita */
+    transition: background 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.pageHeader nav a:hover,
+.pageHeader nav a:active,
+.pageHeader nav .active a,
+.pageFooter nav a:hover,
+.pageFooter nav a:active,
+.pageFooter nav .active a {
+    background: #0056b3;
+    color: #fff;
+    border-radius: 4px; /* Bordes suaves al hacer hover */
+}
+
+/* Estilos para el contenido y diseño de la página */
+.top {
+    margin-bottom: 4%;
+}
+
+.content {
+    width: 70%;
+    float: left;
+}
+
+.top-sidebar {
+    width: 25%; /* Aumentar el ancho para un mejor equilibrio */
+    float: left;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 20px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    background-color: #f8f9fa; /* Fondo claro */
+    transition: background 0.3s, color 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.bottom-sidebar {
+    width: 25%;
+    float: left;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 20px;
+}
+
+.featured {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.featured h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.featured p {
+    margin-bottom: 15px;
+}
+
+.featured a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 
+}
+
+/* Estilos para la barra de navegación del pie de página */
+.pageFooter {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #007BFF;
+    border-radius: 8px 8px 0 0;
+    color: #FFF;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.pageFooter nav ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Alinear al centro */
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+.pageFooter nav ul li {
+    display: inline-block;
+}
+
+.pageFooter nav a {
+    color: #FFF;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.pageFooter nav a:hover,
+.pageFooter nav a:active,
+.pageFooter nav .active a {
+    background: #0056b3;
+    color: #FFF;
+}
+
+.pageFooter p {
+    margin: 15px 0 0;
+    font-size: 0.9em;
+    color: #FFF;
+}
+
+
+    </style>
 </head>
 <body class="body">
     <header class="pageHeader">
